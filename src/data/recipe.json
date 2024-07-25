@@ -1,18 +1,21 @@
 [
     {
       "id": 1,
+      "name": "NAme1",
       "image": "/path/to/image1.jpg",
       "description": "Non officia occaecat ut enim cupidatat labore exercitation pariatur sit cupidatat.",
       "link": "/recipe1"
     },
     {
       "id": 2,
+      "name": "NAme2",
       "image": "/path/to/image2.jpg",
       "description": "Non officia tempor occaecat ut enim labore exercitation pariatur sit cupidatat.",
       "link": "/recipe2"
     },
     {
       "id": 3,
+      "name": "NAme3",
       "image": "/path/to/image3.jpg",
       "description": "Non officia tempor occaecat ut cupidatat labore exercitation pariatur sit cupidatat.",
       "link": "/recipe3"

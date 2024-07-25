@@ -1,5 +1,7 @@
 import React from 'react';
-import { Navbar } from './navbar';
+import { Navbar } from '../pages/navbar';
+import { Footer } from '../pages/footer';
+import Copyright from '../pages/copyright';
 
 const About = () => {
 
@@ -62,7 +64,8 @@ const About = () => {
           </div>
         </div>
       </div>
-
+      <Footer />
+      <Copyright />
     </div>
   );
 };

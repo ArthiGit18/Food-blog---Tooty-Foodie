@@ -16,6 +16,7 @@
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .container_bg {
@@ -146,11 +147,22 @@
 .nav-list ul {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 30px;
 }
 
-ul li {
+.nav-list ul li {
   list-style-type: none;
+  position: relative;
+
+}
+
+.nav_icon{
+  padding: 3px;
+}
+
+.nav-list ul li a{
+  display: flex;
+  align-items: center;
 }
 
 li a {
@@ -161,6 +173,54 @@ li a {
 
 li a:hover {
   color: blueviolet;
+}
+
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  margin-top: 5px;
+  list-style: none;
+  z-index: 1000;
+  border-top: 5px solid purple;
+}
+
+.submenu li {
+  width: 200px;
+}
+
+.submenu li a {
+  padding: 10px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  background-color: #f8f9fa;
+  color: blueviolet;
+}
+
+.nav-btn button{
+  border-radius: 50px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  padding: 10px 30px;
+  background: linear-gradient(113deg, rgb(251, 250, 205) 24.4%, rgb(247, 163, 205) 53.7%, rgb(141, 66, 243) 99.2%);
+}
+
+.nav-btn button:hover{
+  background: linear-gradient(113deg, rgb(141, 66, 243) 24.4%, rgb(247, 163, 205) 53.7%, rgb(251, 250, 205) 99.2%);
 }
 
 /* about */
@@ -199,6 +259,24 @@ li a:hover {
 
 .trending-recipe div a span:hover {
   color: blueviolet;
+}
+
+
+/* recipe */
+
+.search_recipe{
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.recipe_card {
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.recipe_card.selected {
+  border: 3px solid purple;
 }
 
 .subscribe{
@@ -242,11 +320,28 @@ li a:hover {
 .footer-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 100px 0;
+  margin-top: 50px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid gainsboro;
 }
 
 .footerlist-item1 img{
   height: 100px;
+}
+
+/* copyright */
+
+.copyright_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.copyright_wrapper p{
+  margin: 0;
 }
 /* ----------------------------------------------------
     Video Widget
